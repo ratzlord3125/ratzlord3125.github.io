@@ -1,9 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aditya Kumar">
+    <meta name="description" content="View the portfolio of Aditya Kumar a.k.a. ratzlord3125">
     <title>Aditya Kumar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js" type="javascript"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script>
+  
   </head>
+
   <body>
-    hemlo
+    
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#home">About Me</a></li>
+                  <li><a href="#about">Projects</a></li>
+                  <li><a href="#">Skill Set</a></li>
+                  <li><a href="#">Contact Me</a></li>
+              </ul>
+          </div>
+          
+          <span class="navTrigger">
+            
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+          <script>
+            $('.navTrigger').click(function () {
+              $(this).toggleClass('active');
+              console.log("Clicked menu");
+              $("#mainListDiv").toggleClass("show_list");
+              $("#mainListDiv").fadeIn();
+            });
+          </script>
+      </div>
+  </nav>
+  <section class="home">
+    <header class="masthead text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+
+          <img class="masthead-avatar mb-5" src="images/logo.jpg" alt="Profile Photo" />
+
+          <h1 class="masthead-heading text-uppercase mb-0">Aditya Kumar</h1>
+
+          <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+              <div class="divider-custom-line"></div>
+          </div>
+
+          <p class="masthead-subheading mb-0">Student - Web Developer - Coder</p>
+      </div>
+    </header>
+  </section>
+  <section class="about" class="py-5">
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">About me</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad
+            minim veniam.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-5 text-center text-lg-left">
+                <img class="img-fluid" src="images/logo.jpg" alt="Big Profile Photo">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7">
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                    <!-- Grid column -->
+                    <!--div class="col-1">
+                        <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                    </div-->
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-xl-10 col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">Education</h5>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                            minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+            </div>
+        </div>
+                
+    </div>
+    <!-- Container -->
+
+</section>
+<script>
+  $(function () {
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+
+        // Adding animations to the sections
+        $("section").addClass("wow fadeIn");
+
+        // Animations Init
+        new WOW().init();
+</script>
+  
   </body>
 </html>
