@@ -483,6 +483,11 @@ body {
       height: 100%;
     }
   }
+  @media (max-width: 992px) {
+    #home, #about, #projects, #skills, #contact {
+      height: 100%;
+    }
+  }
 
   .footer {
     padding-top: 2rem;
@@ -561,7 +566,7 @@ body {
 {
   background-color:#161b22
 }
-@media (max-width:767px)
+@media (max-width:569px)
 {
   .social-icons li.title
   {
@@ -570,3 +575,48 @@ body {
     font-weight:600
   }
 }
+
+.skills .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .skills .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+  }
+  .skills .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+  }
+  .skills .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem;
+  }
+  /*.skills img {
+      height: 100px;
+  }*/
+  .portfolio-modal .btn-close {
+    color: #1abc9c;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (max-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+/*.about-pic {
+    height: 150px;
+    width: 150px;
+}*/
