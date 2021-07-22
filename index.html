@@ -65,6 +65,15 @@
               $("#mainListDiv").fadeIn();
             });
           </script>
+          <script>
+            $('.nav div.main_list ul li a').click(function () {
+              $(this).toggleClass('active');
+              $('.navTrigger').toggleClass('active');
+              console.log("Clicked link");
+              $("#mainListDiv").toggleClass("show_list");
+              $("#mainListDiv").fadeIn();
+            });
+          </script>
       </div>
   </nav>
   <section id="home">
@@ -167,7 +176,7 @@
                   <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
                       necessitatibus saepe eveniet ut et voluptates repudiandae.
                   </p>
-                  <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                  <a class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i> View project</a>
               </div>
           </div>
           <!-- Grid column -->
@@ -187,7 +196,7 @@
                   <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
                       necessitatibus saepe eveniet ut et voluptates repudiandae.
                   </p>
-                  <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                  <a class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i> View project</a>
               </div>
           </div>
           <!-- Grid column -->
@@ -207,7 +216,7 @@
                   <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
                       necessitatibus saepe eveniet ut et voluptates repudiandae.
                   </p>
-                  <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                  <a class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i> View project</a>
               </div>
           </div>
           <!-- Grid column -->
@@ -219,6 +228,155 @@
   <!-- Container -->
 
 </section>
+
+<section id="skills" class="py-5">
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">My Skill Set</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad
+            minim veniam.</p>
+
+        
+        
+        
+                
+    </div>
+    <!-- Container -->
+
+</section>
+
+<section id="contact" class="py-5" style="background-color: #eee;">
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+
+            <form>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-name" class="form-control">
+                    <label for="contact-name" class="">Your name</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-email" class="form-control">
+                    <label for="contact-email" class="">Your email</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-Subject" class="form-control">
+                    <label for="contact-Subject" class="">Subject</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="md-form">
+                    <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                    <label for="contact-message">Your message</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-blue btn-md">Send</a>
+            </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                <i class="fa fa-map-marker fa-2x blue-text"></i>
+                <p>BPHC, Hyderabad, Telangana, India</p>
+                </li>
+                <li>
+                <i class="fa fa-phone fa-2x mt-4 blue-text"></i>
+                <p>+ 91 123 4567 890</p>
+                </li>
+                <li>
+                <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
+                <p class="mb-0">contact@gmail.com</p>
+                </li>
+            </ul>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+</section>
+
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            
+            <!-- Footer Social Icons-->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">FOLLOW ME</h4>
+                <ul class="social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/adityakr0624/" target="blank"><i class="fab fa-fw fa-facebook-f"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/_adityakr.3125_/" target="blank"><i class="fab fa-fw fa-instagram"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/AdityaKr3125/" target="blank"><i class="fab fa-fw fa-twitter"></i></a></li>
+                    <li><a class="linkedin" href="https://in.linkedin.com/in/aditya-kumar-b66849171/" target="blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+                    <li><a class="github" href="https://github.com/ratzlord3125/" target="blank"><i class="fab fa-fw fa-github"></i></a></li>   
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
 <script>
   $(function () {
             $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
